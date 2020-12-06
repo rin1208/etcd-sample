@@ -1,5 +1,5 @@
 ### set up
-- docker network create etcd-network --subnet=172.16.0.0/24 --ip-range=172.16.0.0/24  
+$ docker network create etcd-network --subnet=172.16.0.0/24 --ip-range=172.16.0.0/24  
 
 ### add 
 $ curl -X POST -d '{"key": "hoge","value": "fuga"}' http://localhost:12379/v3/kv/put
